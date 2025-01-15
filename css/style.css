@@ -1,0 +1,116 @@
+:root{
+
+    --primario: #a871fc;
+    --secundario: #ffe43b;
+    --rojizo: #fa553e;
+    --blanco: #ffffff;
+    --primario0scuro: #6b1c6f;
+    --verde: #93f194;
+
+    --fuenteprin: 'staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body{
+
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteprin);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/* header */
+.header {
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo-h {
+
+    margin: 3rem 0;
+
+}
+
+/*footer*/
+
+.footer{
+    background-color:var(--primario0scuro);
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+
+.footer__text{
+    font-family: var(--fuenteprin);
+    text-align: center;
+    font-size: 20px;
+}
+
+.navlink{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--primario0scuro);
+    gap: 2rem; /*Pone un espacio entre dos elementos, evitando el uso de margin*/
+}
+
+.navlink__s{
+    font-family: var(--fuenteprin);
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navlink__s--activo,
+.navlink__s:hover{
+    color: var(--secundario);
+}
+
+
